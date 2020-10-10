@@ -81,7 +81,7 @@ function run(player) {
                 headless: true,
                 defaultViewport: null,
                 args:[
-                    '--start-maximized' // you can also use '--start-fullscreen'
+                    '--start-maximized'
                 ]
             });
             let page = await browser.newPage();
@@ -92,8 +92,6 @@ function run(player) {
             await page.waitForSelector('#onetrust-accept-btn-handler');
             await page.click('#onetrust-accept-btn-handler')
 
-            /* await page.waitForNavigation({ waitUntil: 'networkidle2' }); */
-            /* await page.waitForResponse(response => response.ok()); */
             await page.waitForNavigation({ waitUntil: 'load' });
 
             await inputPlayer(page, player);
