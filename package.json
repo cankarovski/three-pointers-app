@@ -1,0 +1,14 @@
+{
+  "name": "threepointers",
+  "version": "1.0.0",
+  "description": "This app returns specified NBA player's three pointer average for every season.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gasper Cankar",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^5.3.1"
+  }
+}
